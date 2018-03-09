@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: rgba(156,156,156,0.45);
+}
+ul,ol,dl{
+	list-style: none;
+}
+/*清除浮动*/
+.clearfix::after{
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;;
+	clear: both;
+}
+.clearfix{
+	zoom:1;    /*为了兼容IE*/
+}
+
+
+
+header{
+	background-color: #f0f0f0;
+	clear: both;
+}
+section{
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 20px
+}
+.title{
+	font-size: 32px;
+	height: 60px;
+	line-height: 60px;
+	color: #cdcdcd;
+	float: left;
+}
+#addNew a{
+	float: right;
+	width: 10%;
+	height: 30px;
+	margin-top: 18px;
+	margin-left: 10px;
+}
+
+.aBtn{
+	cursor: pointer;
+	color: #cdcdcd;
+	text-decoration: none;
+}
+#addBox{
+	float: right;
+	margin-top: 15px;
+	font-size: 14px;
+}
+
+.listBox{
+	width: 50%;
+	height: 30px;
+	text-indent: 10px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 1px 6px rgba(158,158,158,0.45) inset;
+	outline: none;
+	font-size: inherit;
+}
+#todoShow>h1{
+	margin: 20px 0;
+	/*margin有重合特性*/
+}
+
+.itemBox{
+	font-size: 20px;
+	background-color: #f0f0f0;
+	padding: 5px 10px;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #fff;
+}
+
+.itemBox>input{
+	width: 20px;
+	cursor: pointer;
+	height: 20px;
+	vertical-align: text-bottom;
+}
+.itemBox>span{
+	display: inline-block;
+	width: 90%;
+}
+
+.doneList{
+	opacity: 0.5;
+}
+.doneList span{
+	text-decoration: line-through;
+}
+footer{
+	color: #f0f0f0;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 16px
+}

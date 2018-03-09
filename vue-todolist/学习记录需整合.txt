@@ -1,6 +1,0 @@
-实现doing事件与done事件的分离功能
-
-方法一：
-使用vue的v-if指令能够轻松的实现该功能，且只需要一个localStorage
-方法二：
-也使用一个localStorage,利用completed属性进行区分doing和done,然后分别加入到两个数组中作为数据源。
